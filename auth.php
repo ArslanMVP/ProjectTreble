@@ -18,6 +18,6 @@ else if(count($user) == 1){
 }
 
 $conn->close();
+header('Location: Final%20Front%20end/Untitled-1.html');
 
-header('Location: homePage.html');
 ?>

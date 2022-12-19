@@ -2,15 +2,21 @@
 <html>
     <head>
         <title>Main Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     </head>
 <style>
+  html{
+    scroll-behavior: smooth;
+  }
     body{
         padding: 0%;
         margin: 0%;
+        background-color: black;
+        
     }
     video{
         position: absolute;
-  top: 0;
+  top: 200px;
   left: 0;
   width: 100%;
   height: 100%;
@@ -385,7 +391,7 @@
       font-size:20px;
     }
     .block5{
-      margin-top:-300px;
+      margin-top:-100px;
      height:400px;
       background-color:rgb(37, 37, 37);
     }
@@ -398,8 +404,73 @@
       font-size: 20px;
       margin-left:10%;
     }
+    .nav{
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 170px;
+      background: url(webNav.webp);
+      background-size: 100%;
+      z-index: 2;
+    }
+    .greenNav{
+      width: 100vw;
+      height: 20px;
+      background-color: #fedf00;
+      z-index: 1;
+    }
+    .navTop{
+      height: 150px;
+      display: flex;
+      z-index: 1;
+    }
+    .navTop a , p{
+      margin-left: 1vw;
+      font-size: 14px;
+      font-family: "Tahoma","Graphic",sans-serif;
+      text-decoration: none;
+      color: white;
+      position: relative;
+      top: 30px;
+    }
+    .inp{
+      border: 2px solid #fedf00;
+      
+      width: 60%;
+      height: 30px;
+      outline: none;
+      font-size: 16px;
+    }
 </style>
     <body>
+      <div class="nav">
+    <div class="navTop">
+      <div style="width: 20%; height: 100%; padding-top: 100%; margin-top: -3vh; background:url(logo2.png)no-repeat; background-size:90%;"></div>
+      <div style="display: flex;flex-direction: column;">
+      <div style="margin-left: 10%;width: 80vw; display: flex;">
+        <a href="youtube.com">Распродажа |</a>
+        <a href="youtube.com">Доставка и оплата |</a>
+        <a href="youtube.com">Гарантий и возврат |</a>
+        <a href="#contacts">Контакты |</a>
+      <a href="google-map.com" style="margin-left: 10vw;">➤Каскелен</a>
+      </div>
+      <div style="margin-top: 50px; margin-left: 4%; display:flex;">
+        <input type="text" name="poisk" class="inp"> 
+        <a href="" style="margin-top:-20px; font-size: 16px;">☎+7 707 909 3137 <?php echo $login; ?></a>
+      </div>
+    </div>
+    </div>
+    
+    <div class="greenNav">
+    </div>
+  </div>
+  <div style="height: 200px;">  
+  </div>
+
+
+
+
         <div class ="block1">     
         <video src="IMG_8765 - Trim.MP4" type="video/MP4" autoplay muted loop> </video>
         <h3>
@@ -627,7 +698,7 @@
                </div>
            </div>   
             </div> 
-           <div class="block5">
+           <div class="block5" id="contacts">
             <div class = "end1">
               <h6><strong>Клуб в сду:</strong> Music Club</h6>
               <h6><strong>Над проектом работали:</strong> Кабылбеков Арсен,Елболсынов Арслан, Галиев Гани.</h6>
