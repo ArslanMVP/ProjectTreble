@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sign in</title>
+	<style type="text/css">
+		input::placeholder{color: #fff;}
+		input{
+			color: white;
+		width: 18vw;
+		outline: none;
+		border-top:0;
+		border-left: 0;
+		border-right: 0;
+		border-bottom:1;
+		background: url(piano.png);
+		}
+		#butSign{
+			border:0; width: 18vw; height: 6vh; background-color: #343f46; color:white; border-radius: 8px;
+		}
+		#butSign:hover{
+			background-color: #21232f;
+		}
+	</style>
+</head>
+<body style="background: url(backSignka.jpg); background-size: 100%; font-family: 'Lato', sans-serif; color: white;">
+	<div style="display: flex; 	margin-top: 20vh; justify-content: center;">
+		<form action="check.php" method="post">
+			<h1>Sign in</h1>
+			<input type="text" maxlength="15" placeholder="♫ please write your username" name="username"><br><br>
+			<input type="text" onkeypress='validate(event)' maxlength="11" placeholder="☎ please write your phone number" name="email"><br><br>
+			<input type="password" placeholder="⁂ please write your password" name="pass"><br><br>
+			<input type="password" placeholder="⁂ please repeat your password" name="passs"><br>
+			<br>
+			<button type="submit" id="butSign">Sign in</button>
+		</form>
+
+		<script type="text/javascript">
+			
+		</script>
+	</div>
+</body>
+</html>

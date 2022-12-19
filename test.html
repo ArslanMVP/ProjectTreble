@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style type="text/css">
+		body{
+			background-color: black;
+		}
+		p{
+			font-size: 50px;
+			color: green;
+			font-family: monospace;
+			opacity: 0.5;
+		}
+		input{
+		font-size: 30px;
+		color: green;
+		text-shadow: 0 0 5px green;
+		filter: brightness(2);
+		box-shadow: 0 0.5em 0.5em -0.5em green;
+		width: 18vw;
+		outline: none;
+		border-top:0;
+		border-left: 0;
+		border-right: 0;
+		border-bottom:1px solid green;
+		background: url(piano.png);
+		}
+	</style>
+</head>
+<body>
+	<p id="tt"></p>
+	<input type="text" id="inp" hidden><br>
+	<p id="tt2"></p>
+	<script type="text/javascript">
+		var i = 0;
+		var txt = 'Welcome to page / Please type u email';
+		var txt2 = 'Pliz, type u password.';
+		var speed = 100;
+
+		function typeWriter() {
+		  if (i < txt.length) {
+ 	  			 
+ 	  			 if(txt.charAt(i) == "/"){
+ 	  			 	document.getElementById("tt").innerHTML += "<br>"
+ 	  			 }else{
+ 	  			 	document.getElementById("tt").innerHTML += txt.charAt(i);
+ 	  			 }
+ 	  			 i++;
+ 	  			 setTimeout(typeWriter, speed);
+ 	  			 console.log(i)
+ 			 }else{
+ 			 	HideNotForm("tt");
+ 			 	i = 0;
+ 			 	typeWriter2();
+ 			 }
+		}
+		function typeWriter2() {
+		  if (i < txt2.length) {
+ 	  			 document.getElementById("tt2").innerHTML += txt2.charAt(i);
+ 	  			 i++;
+ 	  			 setTimeout(typeWriter2, speed);
+ 	  			 console.log(i)
+ 			 }else{
+ 			 	HideNotForm("tt2");
+ 			 }
+		}
+		function HideNotForm(tt){
+			document.getElementById(tt).style.opacity = "1";	
+			document.getElementById(tt).style.filter = "brightness(2)";
+			document.getElementById(tt).style.textShadow = "0 0 5px green";
+			document.getElementById("inp").hidden = false;	
+			setTimeout(Hide2,500);
+		}
+		function Hide2(){
+			document.getElementById("tt").style.opacity = "0.5";	
+			document.getElementById("tt").style.filter = "brightness(1)";
+			document.getElementById("tt").style.textShadow = "none";
+			setTimeout(Hide3,200);
+		}
+		function Hide3(){
+			document.getElementById("tt").style.opacity = "1";	
+			document.getElementById("tt").style.filter = "brightness(2)";
+			document.getElementById("tt").style.textShadow = "0 0 5px green";
+		}
+		typeWriter();
+	</script>
+</body>
+</html>
