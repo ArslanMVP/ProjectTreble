@@ -30,163 +30,25 @@ body{
     color:rgb(251, 223, 12);
       font-size:15px;
  }
- .block2{
-    height:75px;
-    background-color: rgb(20, 20, 20);
- }
- .block2 h7{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
-    margin-top:3%;
-    margin-left:1%;
-    font-size:20px;
- }
- .sorting{
-    margin-top:-1%;
-     width:50%;
-     margin-left:20%;
- }
- button{
-    height:30px;
-    background-color:rgb(251, 223, 12);
-    font-size: 15px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-button:hover{
-    box-shadow:0 14px 28px rgba(251, 255, 0, 0.774), 0 10px 10px rgba(0,0,0,0.22);
-    background-color: white;
-}
-.block3{
-    height: 1300px;
+ .block3{
     padding-top:10%;
     background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100vw;
 }
- 
- .b1{
-    margin-top:5%;
-    margin-left:3%;
+ .bb{
     height:400px;
-    width:20%;
+    width:300px ;
+    margin-top: 5vh;
     border: 1px solid black;
     background: white;
  }
- .b1:hover{
+ .bb:hover{
     
     box-shadow:0 14px 28px rgba(251, 255, 0, 0.774), 0 10px 10px rgba(0,0,0,0.22);
    
- }
- .b2{
-    margin-top:-26.5%;
-    margin-left:27%;
-    height:400px;
-    width:20%;
-    border: 1px solid black;
-    background: white;
- }
- .b2:hover{
-    box-shadow:0 14px 28px rgba(251, 255, 0, 0.774), 0 10px 10px rgba(0,0,0,0.22); }
- .b3{
-    margin-top:-26.5%;
-    margin-left:51%;
-    height:400px;
-    width:20%;
-    border: 1px solid black;
-    background: white;
- }
- .b3:hover{
-    box-shadow:0 14px 28px rgba(251, 255, 0, 0.774), 0 10px 10px rgba(0,0,0,0.22); }
- .b4{
-    margin-top:-26.5%;
-    margin-left:75%;
-    height:400px;
-    width:20%;
-    border: 1px solid black;
-    background: white;
- }
- .b4:hover{
-    box-shadow:0 14px 28px rgba(251, 255, 0, 0.774), 0 10px 10px rgba(0,0,0,0.22); }
- .b5{
-    margin-top:5%;
-    margin-left:3%;
-    height:400px;
-    width:20%;
-    border: 1px solid black;
-    background: white;
- }
- .b5:hover{
-    display: inline-block;
-    box-shadow:0 14px 28px rgba(251, 255, 0, 0.774), 0 10px 10px rgba(0,0,0,0.22); }
- .b6{
-    margin-top:-26.5%;
-    margin-left:27%;
-    height:400px;
-    width:20%;
-    border: 1px solid black;
-    background: white;
- }
- .b6:hover{
-    box-shadow:0 14px 28px rgba(251, 255, 0, 0.774), 0 10px 10px rgba(0,0,0,0.22); }
- .b7{
-    margin-top:-26.5%;
-    margin-left:51%;
-    height:400px;
-    width:20%;
-    border: 1px solid black;
-    background: white;
- }
- .b7:hover{
-    box-shadow:0 14px 28px rgba(251, 255, 0, 0.774), 0 10px 10px rgba(0,0,0,0.22); }
- .b8{
-    margin-top:-26.5%;
-    margin-left:75%;
-    height:400px;
-    width:20%;
-    border: 1px solid black;
-    background: white;
- }
- .b8:hover{
-    box-shadow:0 14px 28px rgba(251, 255, 0, 0.774), 0 10px 10px rgba(0,0,0,0.22); }
- .b{
-    margin-top:-10%;
- }
- .b9{
-    margin-top:5%;
-    margin-left:3%;
-    height:400px;
-    width:20%;
-    border: 1px solid black;
-    background: white;
- }
- .b9:hover{
-    box-shadow:0 14px 28px rgba(251, 255, 0, 0.774), 0 10px 10px rgba(0,0,0,0.22);
- }
- .b10{
-    margin-top:-26.5%;
-    margin-left:27%;
-    height:400px;
-    width:20%;
-    border: 1px solid black;
-    background: white;
- }
- .b10:hover{
-    box-shadow:0 14px 28px rgba(251, 255, 0, 0.774), 0 10px 10px rgba(0,0,0,0.22); }
- .b11{
-    margin-top:-26.5%;
-    margin-left:51%;
-    height:400px;
-    width:20%;
-    border: 1px solid black;
-    background: white;
- }
- .b11:hover{
-    box-shadow:0 14px 28px rgba(251, 255, 0, 0.774), 0 10px 10px rgba(0,0,0,0.22); }
- .b12{
-    margin-top:-26.5%;
-    margin-left:75%;
-    height:400px;
-    width:20%;
-    border: 1px solid black;
-    background: white;
  }
  .b12:hover{
     box-shadow:0 14px 28px rgba(251, 255, 0, 0.774), 0 10px 10px rgba(0,0,0,0.22); }
@@ -211,76 +73,59 @@ button:hover{
            Чтобы пианист сохранил максимальный контроль над громкостью, расстояние свободного полета молотка должно быть как можно меньше.
          </h7>
         </div>
-        <div class="block2">
-       
-       <h7>
-        <br>
-        Сортировка:
-    </h7>
-        <div class="sorting">
-            <button>Все разделы</button>
-            <button id="acustic">Акустические</button>
-            <button id="">Электронные</button>
-
-    </div>
     <div class="block3">
-        <div class="b">
-        <div id="">
-    <div class="b1">
+      
+    <div class="bb">
     <img src="p.1.webp" width="90%">
     <h4>Performance P118 Пианино акустическое, черное, фурнитура хром, W.Steinberg</h4>
     <h2> 1 336 000 kzt</h2>
     </div>   
-    <div class="b2">
+    <div class="bb">
         <img src="p2.webp"  width="90%"> 
         <h4>Performance P125E Пианино акустическое, черное, фурнитура хром, W.Steinberg </h4>
         <h2>  1 336 000 kzt</h2>
     </div>
-    <div class="b3">
+    <div class="bb">
         <img src="p3.webp"  width="90%">
         <h4>Performance P118 Пианино акустическое, черное, латунная фурнитура, W.Steinberg</h4>
         <h2> 1 405 000 kzt</h2>
         </div>
-        <div class="b4">
+        <div class="bb">
             <img src="p4.webp" width="90%">
             <h4>Performance P121 Пианино акустическое, черное, фурнитура хром, W.Steinberg</h4>
             <h2>1 475 000 kzt</h2>
     </div>
-    <div class="b5">
+    <div class="bb">
         <img src="p5.jpg">
         <h4>YAMAHA JU109 PE АКУСТИЧЕСКОЕ ПИАНИНО, 109СМ</h4>
         <h2>1 975 000 kzt</h2>
         </div>     
-        <div class="b6">
+        <div class="bb">
             <img src="p6.jpg">
         <h4>YAMAHA JU109 PE АКУСТИЧЕСКОЕ ПИАНИНО, 109СМ</h4>
         <h2>2 105 000 kzt</h2>
         </div>
-        <div class="b7">
+        <div class="bb">
             <img src="p7.jpg">
         <h4>YAMAHA JX113T PE АКУСТИЧЕСКОЕ ПИАНИНО, 113СМ</h4>
         <h2> 2 508 000 kzt</h2>
         </div>
-        <div class="b8">
+        <div class="bb">
             <img src="p8.png">
         <h4>YAMAHA JX113T-SILENT PE АКУСТИЧЕСКОЕ ПИАНИНО, САЙЛЕНТ 113СМ</h4>
         <h2> 2 550 000 kzt</h2>
         </div>
-        </div>
-        <div id = "Eloctro">
-        <div class="b9">
+        <div class="bb">
             <img src="p9.jpg">
             <h4>Цифровое пианино Casio CDP-S110BK</h4>
             <h2> 199 000 kzt</h2>
             </div>
-                </div>
-                <div class="b10">
+                <div class="bb">
                     <img src="p10.png">
                     <h4>Цифровое пианино Casio PX-770BKC7</h4>
                     <h2> 480 000 kzt</h2>
-                </div>
-                   
-                    <div class="b11">
+                </div>          
+                    <div class="bb">
                         <br>
                         <br>
                         <br>
@@ -289,18 +134,12 @@ button:hover{
                         <h4>Цифровое пианино Casio PX-770WEC7</h4>
                        
                         <h2> 689 000 kzt</h2>
-                    </div>
-                        
-                        <div class="b12">
+                    </div>  
+                        <div class="bb">
                             <img src="p12.jpeg">
                             <h4>Цифровое пианино Casio PX-770WEC7</h4>
                             <h2>689 000 kzt</h2>
-                        </div>
-                            </div>
-            </div>
-            </div>
-            </div>
-          </div>
+               </div>
          </div>
     </body>
 </html>
